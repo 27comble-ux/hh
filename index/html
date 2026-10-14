@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+ 
+       <title>Colliding Shapes</title>
+          <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@c-frame/aframe-physics-system@4.2.x/dist/aframe-physics-system.min.js"></script>
+   
+    </head>
+    <body>
+        <a-scene physics="gravity:-10">
+    
+            <a-sky color="lightblue"></a-sky>
+        
+            <!-- Floor -->
+            <a-plane static-body
+                color="tan"
+                position="0 0 0"
+                width="70"
+                height="70"
+                rotation="-90 0 0"
+            ></a-plane>
+        <a-box static-body
+        
+        color="red"
+        position="0 2 -10"
+        rotation="0 0 90"
+        ></a-box>
+        
+           <a-box dynamic-body="shape: box; mass: 100" 
+        
+        color="red"
+        position="0 2.9 -10"
+        width="10"
+        depth="1"
+        height=".1"
+        ></a-box>
+         
+                <a-box dynamic-body="shape: box; mass: 100" 
+        
+        color="red"
+        position="3 40.9 -10"
+        width="1"
+        depth="1"
+        height="1"
+        ></a-box>
+         
+         <a-sphere dynamic-body="shape: sphere; mass: 10" 
+        
+        src="https://codehs.com/uploads/7b0ffee23ef5cd2744f88a739ffdf796"
+        position="-3 40.9 -10"
+       radius="1"
+        ></a-sphere>
+            
+              <a-box static-body="shape: box; mass: 100" 
+        
+        color="red"
+        position="10 20.9 -10"
+        rotation="-55 90 10"
+        width="40"
+        depth="20"
+        height=".1"
+        ></a-box>
+            
+            <a-box static-body="shape: box; mass: 100" 
+        
+        color="red"
+        position="8 20.9 -10"
+        rotation="55 90 10"
+        width="40"
+        depth="10"
+        height=".1"
+        ></a-box>
+            
+             <a-box static-body="shape: box; mass: 100" 
+        
+        color="red"
+        position="8 15.9 13"
+        rotation="-15 0 20"
+        width="10"
+        depth="10"
+        height=".1"
+        ></a-box>
+        
+        
+         <a-box static-body="shape: box; mass: 100" 
+        
+        color="red"
+        position="-12 .5 20"
+        rotation="0 0 45"
+        width="1"
+        depth="4"
+        height="1"
+        ></a-box>
+            
+             <a-box dynamic-body="shape: box; mass: .2" 
+        
+        color="red"
+        position="-13 2.3 20"
+        rotation="0 0 0"
+        width="25"
+        depth="4"
+        height=".1"
+        ></a-box>
+        
+              <a-box dynamic-body="shape: box; mass: .1" 
+        
+        color="red"
+        position="-20 2.5 14"
+        rotation="0 90 0"
+        width="15"
+        depth="4"
+        height=".1"
+        ></a-box>
+            
+                <a-box dynamic-body="shape: box; mass: .05" 
+        
+        color="red"
+        position="-20 3.5 20"
+        rotation="0 90 0"
+        width="2"
+        depth="2"
+        height="2"
+        ></a-box>
+        
+          <a-box static-body="shape: box; mass: .05" 
+        
+        color="red"
+        position="-20 13.5 14"
+        rotation="0 90 0"
+        width="2"
+        depth="2"
+        height="2"
+        ></a-box>
+        
+        <a-box dynamic-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="-20 14.75 14"
+        rotation="0 90 0"
+        width="20"
+        depth="2"
+        height=".2"
+        ></a-box>
+            
+              <a-sphere dynamic-body="shape: sphere; mass: 1" 
+        
+        src="https://codehs.com/uploads/d947cf23a80ad16d06853ce5c4bac88b"
+        position="-20 15.85 14."
+        rotation="0 90 0"
+        radius=".5"
+        ></a-sphere>
+            
+                <a-box static-body="shape: box; mass: .05" 
+        
+        color="red"
+        position="-20 11.5 8"
+        rotation="0 90 0"
+        width="2"
+        depth="2"
+        height="2"
+        ></a-box>
+        
+         <a-box static-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="-21.2 15.75 14"
+        rotation="90 90 0"
+        width="5"
+        depth="2"
+        height=".2"
+        ></a-box>
+        
+         <a-box static-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="-18.7 15.75 14"
+        rotation="90 90 0"
+        width="5"
+        depth="2"
+        height=".2"
+        ></a-box>
+        
+         <a-box static-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="-19.7 8.75 4"
+        rotation="45 90 -10"
+        width="20"
+        depth="20"
+        height=".2"
+        ></a-box>
+          <a-box static-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="-19.7 8.75 4"
+        rotation="-45 90 -20"
+        width="20"
+        depth="20"
+        height=".2"
+        ></a-box>
+            
+          <a-box static-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="9 19.75 18"
+        rotation="-45 90 -20"
+        width="20"
+        depth="20"
+        height=".2"
+        ></a-box>
+        
+          <a-box static-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="-3 9.75 16"
+        rotation="15 -45 90"
+        width="10"
+        depth="10"
+        height=".2"
+        ></a-box>
+        
+        <a-box static-body="shape: box; mass: .36" 
+        
+        color="red"
+        position="-3 9.75 25.5"
+        rotation="15 45 90"
+        width="10"
+        depth="10"
+        height=".2"
+        ></a-box>
+        
+         
+        <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-18 1.5 -10"
+        rotation="0 90 0"
+        width=".1"
+        depth="1"
+        height="2"
+        ></a-box>
+         <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-17.8 1.5 -10.5"
+        rotation="0 75 0"
+        width=".1"
+        depth="1"
+        height="2"
+        ></a-box>
+       <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-17.3 1.5 -11"
+        rotation="0 45 0"
+        width=".1"
+        depth="1"
+        height="2"
+        ></a-box>
+         <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-16.6 1.5 -11.5"
+        rotation="0 25 0"
+        width=".1"
+        depth="1"
+        height="2"
+        ></a-box>
+           <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-16 1.5 -11.6"
+        rotation="0 0 0"
+        width=".1"
+        depth="1"
+        height="2"
+        ></a-box>
+          
+            <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-15.3 1.5 -11.7"
+        rotation="0 0 0"
+        width=".1"
+        depth="1"
+        height="2"
+        ></a-box>
+        
+          <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-13.7 2 -11.8"
+        rotation="0 0 0"
+        width=".1"
+        depth="1"
+        height="3"
+        ></a-box>
+        
+         <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-11 2.5 -11.9"
+        rotation="0 0 0"
+        width=".2"
+        depth="1"
+        height="5"
+        ></a-box>
+        
+         <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-8 4.5 -12.5"
+        rotation="0 0 0"
+        width=".4"
+        depth="1"
+        height="8"
+        ></a-box>
+          
+          
+          <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-0 4.5 -12.5"
+        rotation="0 0 0"
+        width=".4"
+        depth="1"
+        height="8"
+        ></a-box>
+        
+         <a-box dynamic-body="shape: box; mass: 10"
+        color="green"
+        position="-4 8.5 -12.5"
+        rotation="0 0 90"
+        width=".4"
+        depth="1"
+        height="10"
+        ></a-box>
+        
+        
+        <a-box dynamic-body="shape: box; mass:10"
+        src="https://codehs.com/uploads/4a84c8cbdd482a5245218a7529284357"
+        position="-4 9.5 -12.5"
+          
+          
+      
+            
+        </a-scene>
+    </body>
+</html>
